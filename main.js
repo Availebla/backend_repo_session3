@@ -1,11 +1,16 @@
 //import the express library
 const express = require ("express") 
 
+//import Cross-origin-resource-sharing to allow running backend on same machine as frontend.
+const cors = require("cors");
+
 //import router from routers.js
 const {router} = require("./routers");
 
 //define server instance
 let app = express();
+app.use(cors());
+
 //parse using json
 app.use(express.json()); 
 
