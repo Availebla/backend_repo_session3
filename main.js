@@ -18,11 +18,11 @@ app.use(express.json());
 app.use(router); 
 
 //to start the server at port 3000
-app.listen(3000, (errors) => { 
+app.listen(process.env.PORT, (errors) => { 
     if (errors) {
         console.log(errors);
     } else {
-        console.log("Server started on port 3000")
+        console.log("Server started on port 3000");
     }
 });
 
