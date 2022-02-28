@@ -34,7 +34,6 @@ router.post("/users/add",(request, response) => {
 // define a GET API with path "/home"
 router.get("/home", (request, response) => {
     response.send("Welcome to Dev Toolkit 2!");
-
 });
 
 //define another GET API with path "/sum"
