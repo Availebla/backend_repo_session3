@@ -1,2 +1,1 @@
-
-web: node authdemo_updated.js
+web: node main.js
